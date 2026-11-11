@@ -52,7 +52,6 @@ const possessive = () => {
 const addNameToList = name => {
 	const newName = document.createElement('span')
 
-	// 2. Add text content and attributes
 	newName.textContent = name
 	out.append(newName)
 }
@@ -79,3 +78,6 @@ document.getElementById('random').addEventListener('click', () => {
 document.getElementById('clear').addEventListener('click', () => {
 	out.innerHTML = ''
 })
+
+document.getElementById('loading').classList.add('hidden')
+document.querySelector('section.hidden').classList.remove('hidden')
