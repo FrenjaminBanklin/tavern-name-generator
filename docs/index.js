@@ -79,5 +79,10 @@ document.getElementById('clear').addEventListener('click', () => {
 	out.innerHTML = ''
 })
 
-document.getElementById('loading').classList.add('hidden')
-document.querySelector('section.hidden').classList.remove('hidden')
+document.addEventListener('DOMContentLoaded', () => {
+	document.getElementById('loading').classList.add('hidden')
+	const secs = document.querySelectorAll('section.hidden')
+	for (let i = 0; i < secs.length; i++) {
+		secs[i].classList.remove('hidden')
+	}
+})
