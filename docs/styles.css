@@ -1,6 +1,11 @@
 body {
 	display: flex;
 }
+
+.hidden {
+	display: none;
+}
+
 section {
 	margin-right: 10px;
 }
